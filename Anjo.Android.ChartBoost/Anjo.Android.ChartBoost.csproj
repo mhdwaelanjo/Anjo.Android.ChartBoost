@@ -7,17 +7,17 @@
 	</PropertyGroup>
 	<PropertyGroup>
 		<PackageId>Anjo.Android.ChartBoost</PackageId>
-		<PackageVersion>9.2.1</PackageVersion>
-		<AssemblyVersion>9.2.1</AssemblyVersion>
-		<FileVersion>9.2.1</FileVersion>
-		<Version>9.2.1</Version>
+		<PackageVersion>9.6.1</PackageVersion>
+		<AssemblyVersion>9.6.1</AssemblyVersion>
+		<FileVersion>9.6.1</FileVersion>
+		<Version>9.6.1</Version>
 		<Title>Anjo Android ChartBoost SDK</Title>
 		<Authors>Wael Anjo</Authors>
 		<Owners>Wael Anjo</Owners>
 		<PackageProjectUrl>https://github.com/mhdwaelanjo/Anjo.Android.ChartBoost</PackageProjectUrl>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-		<Description>.NET for Android (formerly Xamarin.Android) Binding Library - ChartBoost SDK V9.2.1</Description>
-		<PackageReleaseNotes>ChartBoost SDK v9.2.1</PackageReleaseNotes>
+		<Description>.NET for Android (formerly Xamarin.Android) Binding Library - ChartBoost SDK V9.6.1</Description>
+		<PackageReleaseNotes>ChartBoost SDK v9.6.1</PackageReleaseNotes>
 		<Copyright>Copyright (c) 2024 Wael Anjo</Copyright>
 		<PackageTags>Xamarin.Android, ChartBoost, Ads, Banner, Interstitial, Rewarded vidoe</PackageTags>
 		<Summary>Chartboost SDK to show basic use cases. It will guide user through initialisation of the SDK, caching and showing 3 types of different ads.</Summary>
@@ -29,7 +29,7 @@
 		<PackageIcon>icon.png</PackageIcon>
 	</PropertyGroup>
 	<ItemGroup>
-	  <None Remove="Jars\chartboost-sdk-9.2.1.aar" />
+	  <None Remove="Jars\chartboost-sdk-9.6.1.aar" />
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="..\icon.png">
