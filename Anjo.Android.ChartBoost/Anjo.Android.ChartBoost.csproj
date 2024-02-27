@@ -1,8 +1,55 @@
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>net8.0-android</TargetFramework>
-    <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFrameworks>net8.0-android;net7.0-android;</TargetFrameworks>
+		<SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+	<PropertyGroup>
+		<PackageId>Anjo.Android.ChartBoost</PackageId>
+		<PackageVersion>9.2.1</PackageVersion>
+		<AssemblyVersion>9.2.1</AssemblyVersion>
+		<FileVersion>9.2.1</FileVersion>
+		<Version>9.2.1</Version>
+		<Title>Anjo Android ChartBoost SDK</Title>
+		<Authors>Wael Anjo</Authors>
+		<Owners>Wael Anjo</Owners>
+		<PackageProjectUrl>https://github.com/mhdwaelanjo/Anjo.Android.ChartBoost</PackageProjectUrl>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<Description>.NET for Android (formerly Xamarin.Android) Binding Library - ChartBoost SDK V9.2.1</Description>
+		<PackageReleaseNotes>ChartBoost SDK v9.2.1</PackageReleaseNotes>
+		<Copyright>Copyright (c) 2024 Wael Anjo</Copyright>
+		<PackageTags>Xamarin.Android, ChartBoost, Ads, Banner, Interstitial, Rewarded vidoe</PackageTags>
+		<Summary>Chartboost SDK to show basic use cases. It will guide user through initialisation of the SDK, caching and showing 3 types of different ads.</Summary>
+		<!-- Include symbol files (*.pdb) in the built .nupkg -->
+		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<PackageIcon>icon.png</PackageIcon>
+	</PropertyGroup>
+	<ItemGroup>
+	  <None Remove="Jars\chartboost-sdk-9.2.1.aar" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\icon.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\LICENSE.txt">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Xamarin.GooglePlayServices.Ads.Identifier" Version="118.0.1.8" />
+	  <PackageReference Include="Xamarin.GooglePlayServices.AppSet" Version="16.0.2.8" />
+	  <PackageReference Include="Xamarin.GooglePlayServices.Auth" Version="120.7.0.2" />
+	  <PackageReference Include="Xamarin.Kotlin.StdLib.Jdk7" Version="1.9.22.1" />
+	  <PackageReference Include="Xamarin.KotlinX.Coroutines.Android" Version="1.8.0.1" />
+	</ItemGroup>
 </Project>
